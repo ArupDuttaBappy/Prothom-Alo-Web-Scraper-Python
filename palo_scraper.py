@@ -8,7 +8,7 @@ import sys
 print(sys.executable)
 f = requests.get('https://www.prothomalo.com/')
 soup = BeautifulSoup(f.text, "lxml")
-top_news = soup.find("div", {"class": "_4OsHC"}).find("a", {"class": "card-with-image-zoom"})
+top_news = soup.find("div", {"class": "_004hA"}).find("a")
 top_news_title = top_news['aria-label']
 top_news_url = top_news['href']
 # print(top_news_title)
